@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4f6aa2"/>
+      <stop offset="1" stop-color="#2e4a7d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <g fill="#d4af37">
+    <rect x="590" y="80" width="20" height="470" rx="10"/>
+    <rect x="280" y="305" width="640" height="20" rx="10"/>
+  </g>
+  <text x="600" y="250" font-family="Cardo,Georgia,serif" font-size="66" text-anchor="middle" fill="#f8f4e3">Inspiración Católica</text>
+  <text x="600" y="320" font-family="Inter,Arial,sans-serif" font-size="28" text-anchor="middle" fill="#f8f4e3" opacity=".9">Frases bíblicas y de los santos</text>
+  <text x="600" y="360" font-family="Inter,Arial,sans-serif" font-size="20" text-anchor="middle" fill="#f8f4e3" opacity=".85">Fondos contemplativos · Voz natural · Recordatorios diarios</text>
+  <text x="1180" y="610" font-family="Inter,Arial,sans-serif" font-size="16" text-anchor="end" fill="#cbd5f1" opacity=".85">demotass · inspiracioncatolica</text>
+  Sorry, your browser does not support inline SVG.
+</svg>
+

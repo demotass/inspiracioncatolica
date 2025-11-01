@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cookies y Preferencias — Inspiración Católica</title>
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body class="legal">
+    <header class="site-header small">
+      <div class="container nav">
+        <a class="brand" href="./"><img src="assets/img/favicon.svg" class="brand-icon" alt="cruz"> Inspiración Católica</a>
+      </div>
+    </header>
+
+    <main class="container legal-content">
+      <h1>Cookies y Preferencias</h1>
+
+      <p>En esta web usamos el mínimo de cookies imprescindible:</p>
+      <ul>
+        <li><strong>Necesarias</strong>:
+          <ul>
+            <li><code>ic_consent</code> — recuerda tus preferencias de cookies. Duración: 12 meses. Propia.</li>
+          </ul>
+        </li>
+        <li><strong>Analíticas (opcionales)</strong> — solo se activan si das tu consentimiento en el banner:
+          <ul>
+            <li>Google Analytics 4 (u otro proveedor equivalente): medición agregada de visitas y eventos. IP anonimizada cuando es posible.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h2>Gestionar tu consentimiento</h2>
+      <p>Puedes actualizar tus preferencias aquí:</p>
+      <div class="consent-panel">
+        <label class="toggle"><input id="consent-analytics-page" type="checkbox"> Permitir analíticas</label>
+        <button id="consent-save-page" class="btn primary">Guardar preferencias</button>
+      </div>
+      <p>Al guardar, colocaremos/actualizaremos una cookie técnica para recordar tu elección.</p>
+
+      <p class="disclaimer">Esta página busca cumplir con RGPD/EEE y CCPA para el uso de cookies/analíticas en el sitio. Si añades otras tecnologías de seguimiento, inclúyelas aquí.</p>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p><a href="./">Volver al inicio</a></p>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+      // Sincroniza el estado del panel con el banner
+      (function(){
+        const prefs = window.ICConsent.get();
+        const chk = document.getElementById('consent-analytics-page');
+        if (prefs) chk.checked = !!prefs.analytics;
+        document.getElementById('consent-save-page').addEventListener('click', function(){
+          window.ICConsent.save({ analytics: chk.checked });
+          alert('Preferencias guardadas');
+        });
+      })();
+    </script>
+  </body>
+  </html>
+

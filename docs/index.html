@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Inspiración Católica — Frases, oración y esperanza</title>
+    <meta name="description" content="Aplicación de frases bíblicas y de la tradición católica. Fondos contemplativos, voz natural, compartir, favoritos y recordatorios diarios." />
+    <meta name="theme-color" content="#2e4a7d" />
+    <meta property="og:title" content="Inspiración Católica" />
+    <meta property="og:description" content="Frases bíblicas y de los santos en un entorno contemplativo." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/img/og-hero.svg" />
+    <meta property="og:url" content="https://demotass.github.io/inspiracioncatolica/" />
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "Inspiración Católica",
+        "operatingSystem": "iOS, Android",
+        "applicationCategory": "LifestyleApplication",
+        "description": "Frases bíblicas y de la tradición católica con fondos contemplativos, TTS, compartir y recordatorios diarios.",
+        "inLanguage": ["es", "en"],
+        "url": "https://demotass.github.io/inspiracioncatolica/"
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="./" aria-label="Inicio">
+          <img src="assets/img/favicon.svg" alt="cruz" class="brand-icon" />
+          <span>Inspiración Católica</span>
+        </a>
+        <nav class="menu">
+          <a href="#caracteristicas">Características</a>
+          <a href="#categorias">Temáticas</a>
+          <a href="privacy.html">Privacidad</a>
+          <a href="terms.html">Términos</a>
+          <a href="cookies.html">Cookies</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-inner">
+        <h1>Palabras que elevan el alma</h1>
+        <p class="subtitle">Frases bíblicas y de la tradición católica, con fondos contemplativos para orar y compartir cada día.</p>
+        <div class="store-buttons">
+          <a class="btn primary" href="#descargas" aria-label="Descargar para Android">Android</a>
+          <a class="btn secondary" href="#descargas" aria-label="Descargar para iOS">iOS</a>
+        </div>
+        <small class="note">En inglés se distribuye como “Catholic Inspiration Daily”.</small>
+      </div>
+    </section>
+
+    <main class="container">
+      <section id="caracteristicas" class="features">
+        <h2>Características</h2>
+        <ul class="feature-list">
+          <li>Frases por temáticas con atribución (papa, santo, Escritura).</li>
+          <li>Fondos contemplativos por categoría con superposición suave.</li>
+          <li>Reproducción por voz natural en español e inglés.</li>
+          <li>Favoritos, compartir como imagen y recordatorio diario opcional.</li>
+          <li>Diseño cuidado y sin rastreadores innecesarios.</li>
+        </ul>
+      </section>
+
+      <section id="categorias" class="categories">
+        <h2>Temáticas</h2>
+        <div class="grid">
+          <article class="card" style="--bg:url('assets/fondos/papal_wisdom.jpg')">
+            <h3>Sabiduría Pontificia</h3>
+          </article>
+          <article class="card" style="--bg:url('assets/fondos/divine_mercy.jpg')">
+            <h3>Divina Misericordia</h3>
+          </article>
+          <article class="card" style="--bg:url('assets/fondos/marian_devotion.jpg')">
+            <h3>Devoción Mariana</h3>
+          </article>
+          <article class="card" style="--bg:url('assets/fondos/saints_inspiration.jpg')">
+            <h3>Voces de los Santos</h3>
+          </article>
+          <article class="card" style="--bg:url('assets/fondos/scripture_trust.jpg')">
+            <h3>Escrituras de Esperanza</h3>
+          </article>
+        </div>
+        <p class="hint">Coloca tus imágenes de la app en <code>docs/assets/fondos/</code> con los nombres listados.</p>
+      </section>
+
+      <section id="descargas" class="downloads">
+        <h2>Descargar la app</h2>
+        <p>Añade aquí los enlaces a las tiendas cuando estén disponibles.</p>
+        <div class="store-buttons">
+          <a class="btn primary ghost" href="#" rel="nofollow noopener" aria-disabled="true">Google Play (próximamente)</a>
+          <a class="btn secondary ghost" href="#" rel="nofollow noopener" aria-disabled="true">App Store (próximamente)</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Inspiración Católica. Todos los derechos reservados.</p>
+        <p class="legal-links">
+          <a href="privacy.html">Política de privacidad</a> ·
+          <a href="terms.html">Términos de uso</a> ·
+          <a href="cookies.html">Preferencias de cookies</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Banner de consentimiento (no carga analítica sin permiso) -->
+    <div id="cookie-banner" class="cookie-banner" hidden>
+      <div class="cookie-content">
+        <p>Usamos una cookie técnica para recordar tus preferencias. Activa opcionalmente analíticas anónimas.</p>
+        <div class="cookie-actions">
+          <label class="toggle"><input id="consent-analytics" type="checkbox"> Permitir analíticas</label>
+          <button id="consent-accept" class="btn primary">Guardar</button>
+        </div>
+        <a class="cookie-more" href="cookies.html">Saber más</a>
+      </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+  </html>
