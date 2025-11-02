@@ -7,6 +7,7 @@ Sitio estático para la app móvil de frases católicas. Preparado para alojarse
 - `docs/` — raíz del sitio para GitHub Pages
   - `index.html` — portada
   - `privacy.html`, `terms.html`, `cookies.html` — páginas legales
+  - `en/` — versión en inglés (mismas páginas)
   - `assets/css/style.css` — estilos (paleta azul mariano y oro)
   - `assets/js/main.js` — banner de consentimiento y GA opcional
   - `assets/fondos/` — coloca aquí tus fondos de la app
@@ -42,4 +43,3 @@ Si usas un dominio propio, añade un archivo `docs/CNAME` con tu dominio y confi
 - App: sin cuentas ni backend propio; favoritos/ajustes en el dispositivo; TTS a cargo del sistema; notificaciones locales. Ver `privacy.html`.
 
 > Nota: Este repositorio no constituye asesoramiento legal. Adapta los textos a tu situación y jurisdicción con tu asesor.
-
