@@ -21,10 +21,10 @@ p{line-height:1.6}
 
 .hero{position:relative; background:
   radial-gradient(100% 120% at 50% 10%, rgba(79,106,162,.55), rgba(46,74,125,.45) 60%, rgba(24,35,61,.55)),
-  url('../fondos/scripture_trust.jpg') center/cover no-repeat; min-height:56vh; display:flex; align-items:center; color:#fff}
+  url('../fondos/scripture_trust.jpg') center/cover no-repeat; min-height:42vh; display:flex; align-items:center; color:#fff}
 .hero::before{content:""; position:absolute;inset:0;background:radial-gradient(80% 80% at 50% 20%, rgba(255,255,255,.25), transparent 60%) }
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg, rgba(46,74,125,.85), rgba(46,74,125,.55))}
-.hero-inner{position:relative;padding:4rem 0}
+.hero-inner{position:relative;padding:2.25rem 0}
 .subtitle{max-width:60ch;margin:.5rem 0 1.25rem}
 .store-buttons{display:flex;gap:.75rem;flex-wrap:wrap}
 .btn{appearance:none;border:0;border-radius:8px;padding:.7rem 1rem;cursor:pointer;text-decoration:none;font-weight:600}
@@ -49,6 +49,11 @@ p{line-height:1.6}
 .site-footer a{color:#c9d3ee}
 .legal-links{opacity:.9}
 
+/* Devotional section */
+.devotional{background:linear-gradient(180deg, #f8f4e3, #fff);border:1px solid #efe9d4;margin:1rem 0 2rem;padding:1.25rem;border-radius:12px}
+.devotional .verse{margin:1rem 0 0;padding:.75rem 1rem;border-left:4px solid var(--gold);background:#fff8e6;border-radius:8px}
+.devotional .ref{opacity:.8}
+
 /* Cookie banner */
 .cookie-banner{position:fixed;inset:auto 0 0 0;background:#fff;border-top:1px solid #e7e7e7;box-shadow:0 -6px 24px rgba(0,0,0,.08);padding:.85rem}
 .cookie-content{display:flex;gap:1rem;align-items:center;justify-content:space-between;max-width:1040px;margin:0 auto}
@@ -63,4 +68,6 @@ p{line-height:1.6}
 
 @media (max-width:720px){
   .cookie-content{flex-direction:column;align-items:flex-start}
+  .hero{min-height:34vh}
+  .hero-inner{padding:1.5rem 0}
 }
