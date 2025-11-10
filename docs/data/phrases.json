@@ -1,0 +1,459 @@
+{
+  "categories": [
+    {
+      "id": "papal_wisdom",
+      "titles": {
+        "en": "Papal Wisdom",
+        "es": "Sabiduría Papal"
+      },
+      "color": "#5B7CFF",
+      "background": "assets/fondos/papal_wisdom.jpg",
+      "quotes": [
+        {
+          "text": {
+            "en": "Do not be afraid. Open wide the doors to Christ.",
+            "es": "No tengan miedo. Abran de par en par las puertas a Cristo."
+          },
+          "source": {
+            "en": "Saint John Paul II, Inauguration Homily (1978)",
+            "es": "San Juan Pablo II, Homilía de inauguración (1978)"
+          }
+        },
+        {
+          "text": {
+            "en": "Faith and reason are like two wings on which the human spirit rises to the contemplation of truth.",
+            "es": "La fe y la razón son como dos alas con las cuales el espíritu humano se eleva hacia la contemplación de la verdad."
+          },
+          "source": {
+            "en": "Saint John Paul II, Fides et Ratio (1998)",
+            "es": "San Juan Pablo II, Fides et Ratio (1998)"
+          }
+        },
+        {
+          "text": {
+            "en": "The world promises you comfort, but you were not made for comfort. You were made for greatness.",
+            "es": "El mundo les promete comodidad, pero ustedes no fueron creados para la comodidad, sino para la grandeza."
+          },
+          "source": {
+            "en": "Pope Benedict XVI, World Youth Day Vigil (2010)",
+            "es": "Papa Benedicto XVI, Vigilia de la JMJ (2010)"
+          }
+        },
+        {
+          "text": {
+            "en": "Holiness does not make you less human, for it is an encounter between your weakness and the power of God's grace.",
+            "es": "La santidad no te hace menos humano, porque es el encuentro entre tu debilidad y la fuerza de la gracia de Dios."
+          },
+          "source": {
+            "en": "Pope Francis, Gaudete et Exsultate (34)",
+            "es": "Papa Francisco, Gaudete et Exsultate (34)"
+          }
+        },
+        {
+          "text": {
+            "en": "Holiness is nothing other than charity lived to the full.",
+            "es": "La santidad no es otra cosa que la caridad vivida en plenitud."
+          },
+          "source": {
+            "en": "Pope Benedict XVI, Angelus (April 1, 2007)",
+            "es": "Papa Benedicto XVI, Ángelus (1 de abril de 2007)"
+          }
+        },
+        {
+          "text": {
+            "en": "Every Christian is a missionary to the extent that he has encountered the love of God in Christ Jesus.",
+            "es": "Cada cristiano es misionero en la medida en que se ha encontrado con el amor de Dios en Cristo Jesús."
+          },
+          "source": {
+            "en": "Pope Francis, Evangelii Gaudium (120)",
+            "es": "Papa Francisco, Evangelii Gaudium (120)"
+          }
+        },
+        {
+          "text": {
+            "en": "The future starts today, not tomorrow.",
+            "es": "El futuro comienza hoy, no mañana."
+          },
+          "source": {
+            "en": "Saint John Paul II, Address to the Young (1999)",
+            "es": "San Juan Pablo II, Discurso a los jóvenes (1999)"
+          }
+        },
+        {
+          "text": {
+            "en": "Let us remember the past with gratitude, live the present with enthusiasm, and look forward to the future with confidence.",
+            "es": "Recordemos el pasado con gratitud, vivamos el presente con entusiasmo y miremos el futuro con confianza."
+          },
+          "source": {
+            "en": "Saint John Paul II, Novo Millennio Ineunte (2001)",
+            "es": "San Juan Pablo II, Novo Millennio Ineunte (2001)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "divine_mercy",
+      "titles": {
+        "en": "Divine Mercy",
+        "es": "Divina Misericordia"
+      },
+      "color": "#8E7CFF",
+      "background": "assets/fondos/divine_mercy.jpg",
+      "quotes": [
+        {
+          "text": {
+            "en": "Let no soul fear to draw near to Me, even though its sins be as scarlet.",
+            "es": "Que ninguna alma tema acercarse a Mí, aunque sus pecados sean como la escarlata."
+          },
+          "source": {
+            "en": "Jesus to Saint Faustina, Diary 699",
+            "es": "Jesús a Santa Faustina, Diario 699"
+          }
+        },
+        {
+          "text": {
+            "en": "The greater the sinner, the greater the right he has to My mercy.",
+            "es": "Cuanto más grande es el pecador, tanto mayor es el derecho que tiene a Mi misericordia."
+          },
+          "source": {
+            "en": "Jesus to Saint Faustina, Diary 723",
+            "es": "Jesús a Santa Faustina, Diario 723"
+          }
+        },
+        {
+          "text": {
+            "en": "Jesus, I trust in You.",
+            "es": "Jesús, en Ti confío."
+          },
+          "source": {
+            "en": "Saint Faustina Kowalska, Diary 327",
+            "es": "Santa Faustina Kowalska, Diario 327"
+          }
+        },
+        {
+          "text": {
+            "en": "We are called to show mercy because mercy has first been shown to us.",
+            "es": "Estamos llamados a mostrar misericordia porque primero se nos ha mostrado misericordia."
+          },
+          "source": {
+            "en": "Pope Francis, Misericordiae Vultus 9",
+            "es": "Papa Francisco, Misericordiae Vultus 9"
+          }
+        },
+        {
+          "text": {
+            "en": "Mercy is the very foundation of the Church's life.",
+            "es": "La misericordia es el fundamento mismo de la vida de la Iglesia."
+          },
+          "source": {
+            "en": "Pope Francis, Misericordiae Vultus 10",
+            "es": "Papa Francisco, Misericordiae Vultus 10"
+          }
+        },
+        {
+          "text": {
+            "en": "Be merciful, just as your Father is merciful.",
+            "es": "Sean misericordiosos como su Padre es misericordioso."
+          },
+          "source": {
+            "en": "Luke 6:36",
+            "es": "Lucas 6,36"
+          }
+        },
+        {
+          "text": {
+            "en": "If a soul does not exercise mercy somehow or other, it will not obtain My mercy on the day of judgment.",
+            "es": "Si un alma no practica la misericordia de una u otra forma, no obtendrá Mi misericordia en el día del juicio."
+          },
+          "source": {
+            "en": "Jesus to Saint Faustina, Diary 1317",
+            "es": "Jesús a Santa Faustina, Diario 1317"
+          }
+        },
+        {
+          "text": {
+            "en": "Divine Mercy is the bridge that connects God and man, opening our hearts to the hope of being loved forever despite our sinfulness.",
+            "es": "La Divina Misericordia es el puente que une a Dios y al hombre, abriendo nuestros corazones a la esperanza de ser amados para siempre a pesar de nuestro pecado."
+          },
+          "source": {
+            "en": "Pope Francis, Divine Mercy Sunday Homily (2016)",
+            "es": "Papa Francisco, Homilía del Domingo de la Divina Misericordia (2016)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "marian_devotion",
+      "titles": {
+        "en": "Marian Devotion",
+        "es": "Devoción Mariana"
+      },
+      "color": "#F09AC3",
+      "background": "assets/fondos/marian_devotion.jpg",
+      "quotes": [
+        {
+          "text": {
+            "en": "Never be afraid of loving the Blessed Virgin too much; you can never love her more than Jesus did.",
+            "es": "Nunca teman amar demasiado a la Santísima Virgen; jamás la amarán más de lo que la amó Jesús."
+          },
+          "source": {
+            "en": "Saint Maximilian Kolbe",
+            "es": "San Maximiliano Kolbe"
+          }
+        },
+        {
+          "text": {
+            "en": "In dangers, in doubts, in difficulties, think of Mary, call upon Mary.",
+            "es": "En peligros, en dudas, en dificultades, piensa en María, invoca a María."
+          },
+          "source": {
+            "en": "Saint Bernard of Clairvaux",
+            "es": "San Bernardo de Claraval"
+          }
+        },
+        {
+          "text": {
+            "en": "If you ever feel distressed during your day, call upon Our Lady; just say this simple prayer: \"Mary, Mother of Jesus, please be a mother to me now.\"",
+            "es": "Si alguna vez te sientes angustiado durante el día, invoca a Nuestra Señora; di esta sencilla oración: \"María, Madre de Jesús, sé madre para mí ahora.\""
+          },
+          "source": {
+            "en": "Saint Teresa of Calcutta",
+            "es": "Santa Teresa de Calcuta"
+          }
+        },
+        {
+          "text": {
+            "en": "To Jesus through Mary; we go to her only to lead us to the Savior.",
+            "es": "A Jesús por María; vamos a ella únicamente para que nos conduzca al Salvador."
+          },
+          "source": {
+            "en": "Saint Louis-Marie de Montfort",
+            "es": "San Luis María Grignion de Montfort"
+          }
+        },
+        {
+          "text": {
+            "en": "Hail, full of grace, the Lord is with you.",
+            "es": "Alégrate, llena de gracia; el Señor está contigo."
+          },
+          "source": {
+            "en": "Luke 1:28",
+            "es": "Lucas 1,28"
+          }
+        },
+        {
+          "text": {
+            "en": "Blessed is she who believed that the Lord would fulfill the promises he made to her.",
+            "es": "Dichosa tú que has creído que se cumplirá lo que te anunció el Señor."
+          },
+          "source": {
+            "en": "Luke 1:45",
+            "es": "Lucas 1,45"
+          }
+        },
+        {
+          "text": {
+            "en": "My soul proclaims the greatness of the Lord, and my spirit rejoices in God my Savior.",
+            "es": "Mi alma proclama la grandeza del Señor y mi espíritu se alegra en Dios, mi Salvador."
+          },
+          "source": {
+            "en": "Luke 1:46-47",
+            "es": "Lucas 1,46-47"
+          }
+        },
+        {
+          "text": {
+            "en": "Mary kept all these things, reflecting on them in her heart.",
+            "es": "María guardaba todas estas cosas y las meditaba en su corazón."
+          },
+          "source": {
+            "en": "Luke 2:19",
+            "es": "Lucas 2,19"
+          }
+        }
+      ]
+    },
+    {
+      "id": "saints_inspiration",
+      "titles": {
+        "en": "Voices of the Saints",
+        "es": "Voces de los Santos"
+      },
+      "color": "#66C1B2",
+      "background": "assets/fondos/saints_inspiration.jpg",
+      "quotes": [
+        {
+          "text": {
+            "en": "Pray, hope, and don't worry. Worry is useless. God is merciful and will hear your prayer.",
+            "es": "Recen, esperen y no se preocupen. La preocupación es inútil. Dios es misericordioso y escuchará su oración."
+          },
+          "source": {
+            "en": "Saint Padre Pio",
+            "es": "San Pío de Pietrelcina"
+          }
+        },
+        {
+          "text": {
+            "en": "The glory of God is man fully alive.",
+            "es": "La gloria de Dios es el hombre que vive plenamente."
+          },
+          "source": {
+            "en": "Saint Irenaeus of Lyons",
+            "es": "San Ireneo de Lyon"
+          }
+        },
+        {
+          "text": {
+            "en": "Love and do what you will.",
+            "es": "Ama y haz lo que quieras."
+          },
+          "source": {
+            "en": "Saint Augustine of Hippo",
+            "es": "San Agustín de Hipona"
+          }
+        },
+        {
+          "text": {
+            "en": "Start by doing what is necessary; then do what is possible; and suddenly you are doing the impossible.",
+            "es": "Comienza haciendo lo necesario, luego lo posible, y de pronto estarás haciendo lo imposible."
+          },
+          "source": {
+            "en": "Saint Francis of Assisi",
+            "es": "San Francisco de Asís"
+          }
+        },
+        {
+          "text": {
+            "en": "God has made us for Himself, and our hearts are restless until they rest in Him.",
+            "es": "Nos hiciste, Señor, para Ti, y nuestro corazón está inquieto hasta que descanse en Ti."
+          },
+          "source": {
+            "en": "Saint Augustine of Hippo, Confessions",
+            "es": "San Agustín de Hipona, Confesiones"
+          }
+        },
+        {
+          "text": {
+            "en": "My vocation is love.",
+            "es": "Mi vocación es el amor."
+          },
+          "source": {
+            "en": "Saint Thérèse of Lisieux",
+            "es": "Santa Teresa del Niño Jesús"
+          }
+        },
+        {
+          "text": {
+            "en": "Listen carefully, my child, to the master's instructions, and attend to them with the ear of your heart.",
+            "es": "Escucha atentamente, hijo mío, las instrucciones del maestro y recíbelas con el oído de tu corazón."
+          },
+          "source": {
+            "en": "Saint Benedict of Nursia, Rule Prologue",
+            "es": "San Benito de Nursia, Regla Prólogo"
+          }
+        },
+        {
+          "text": {
+            "en": "Teach us to give and not to count the cost.",
+            "es": "Enséñanos a dar sin contar el costo."
+          },
+          "source": {
+            "en": "Saint Ignatius of Loyola, Prayer for Generosity",
+            "es": "San Ignacio de Loyola, Oración de Generosidad"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scripture_trust",
+      "titles": {
+        "en": "Scripture of Hope",
+        "es": "Escrituras de Esperanza"
+      },
+      "color": "#9BC9FF",
+      "background": "assets/fondos/scripture_trust.jpg",
+      "quotes": [
+        {
+          "text": {
+            "en": "For I know the plans I have for you, says the Lord, plans for your welfare and not for evil, to give you a future and a hope.",
+            "es": "Porque yo sÃ© los planes que tengo para ustedes â€”orÃ¡culo del SeÃ±orâ€” planes de bienestar y no de desgracia, para darles un futuro y una esperanza."
+          },
+          "source": {
+            "en": "Jeremiah 29:11",
+            "es": "Jeremías 29,11"
+          }
+        },
+        {
+          "text": {
+            "en": "The Lord is my shepherd; there is nothing I shall want.",
+            "es": "El Señor es mi pastor, nada me falta."
+          },
+          "source": {
+            "en": "Psalm 23:1",
+            "es": "Salmo 23,1"
+          }
+        },
+        {
+          "text": {
+            "en": "Do not fear, for I am with you; do not be afraid, for I am your God.",
+            "es": "No temas, porque yo estoy contigo; no te angusties, porque yo soy tu Dios."
+          },
+          "source": {
+            "en": "Isaiah 41:10",
+            "es": "Isaías 41,10"
+          }
+        },
+        {
+          "text": {
+            "en": "Blessed are the merciful, for they shall obtain mercy.",
+            "es": "Bienaventurados los misericordiosos, porque alcanzarán misericordia."
+          },
+          "source": {
+            "en": "Matthew 5:7",
+            "es": "Mateo 5,7"
+          }
+        },
+        {
+          "text": {
+            "en": "We know that all things work together for good for those who love God.",
+            "es": "Sabemos que todas las cosas cooperan para el bien de los que aman a Dios."
+          },
+          "source": {
+            "en": "Romans 8:28",
+            "es": "Romanos 8,28"
+          }
+        },
+        {
+          "text": {
+            "en": "Do not worry about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God.",
+            "es": "No se inquieten por nada; más bien presenten sus peticiones a Dios en toda oración y súplica, con acción de gracias."
+          },
+          "source": {
+            "en": "Philippians 4:6",
+            "es": "Filipenses 4,6"
+          }
+        },
+        {
+          "text": {
+            "en": "The Lord is my light and my salvation; whom shall I fear?",
+            "es": "El Señor es mi luz y mi salvación, ¿a quién temeré?"
+          },
+          "source": {
+            "en": "Psalm 27:1",
+            "es": "Salmo 27,1"
+          }
+        },
+        {
+          "text": {
+            "en": "Peace I leave with you; my peace I give to you. Do not let your hearts be troubled, neither let them be afraid.",
+            "es": "La paz les dejo, mi paz les doy. No se turbe su corazón ni tenga miedo."
+          },
+          "source": {
+            "en": "John 14:27",
+            "es": "Juan 14,27"
+          }
+        }
+      ]
+    }
+  ]
+}
