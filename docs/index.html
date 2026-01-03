@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Inspiración Católica — Frases, oración y esperanza</title>
+    <title>Inspiración Católica - Frases, oración y esperanza</title>
     <meta name="description" content="Aplicación de frases bíblicas y de la tradición católica. Fondos contemplativos, voz natural, compartir, favoritos y recordatorios diarios." />
     <meta name="theme-color" content="#2e4a7d" />
     <meta property="og:title" content="Inspiración Católica" />
@@ -18,101 +18,691 @@
     <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css?v=20251102" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --blue-900: #182745;
+        --blue-800: #1f3258;
+        --blue-700: #2e4a7d;
+        --blue-600: #3f5f99;
+        --gold-500: #c9a76a;
+        --gold-300: #e3c38f;
+        --cream-100: #f4efe6;
+        --bone-200: #e6ddcf;
+        --ink-900: #0b1322;
+        --glass: rgba(18, 28, 45, 0.58);
+        --glass-strong: rgba(14, 22, 36, 0.75);
+        --stroke: rgba(255, 223, 170, 0.25);
+        --shadow: 0 24px 60px rgba(6, 10, 20, 0.45);
+        --radius-lg: 26px;
+        --radius-sm: 14px;
+        --max-width: 1120px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
+        color: var(--cream-100);
+        background: linear-gradient(145deg, #0c1322 0%, #15263f 45%, #101a2c 100%);
+        min-height: 100vh;
+        line-height: 1.7;
+        letter-spacing: 0.01em;
+        overflow-x: hidden;
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background:
+          radial-gradient(circle at 15% 20%, rgba(201, 167, 106, 0.18), transparent 45%),
+          radial-gradient(circle at 80% 10%, rgba(68, 106, 166, 0.35), transparent 45%),
+          radial-gradient(circle at 50% 70%, rgba(46, 74, 125, 0.45), transparent 55%);
+        pointer-events: none;
+        z-index: -2;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      a:focus-visible,
+      button:focus-visible,
+      input:focus-visible {
+        outline: 2px solid var(--gold-300);
+        outline-offset: 2px;
+      }
+
+      section[id] {
+        scroll-margin-top: 100px;
+      }
+
+      .skip-link {
+        position: absolute;
+        left: -999px;
+        top: 0;
+        background: var(--gold-500);
+        color: #141414;
+        padding: 0.75rem 1rem;
+        border-radius: var(--radius-sm);
+        z-index: 10;
+      }
+
+      .skip-link:focus {
+        left: 1rem;
+        top: 1rem;
+      }
+
+      .container {
+        width: min(var(--max-width), 92vw);
+        margin: 0 auto;
+      }
+
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        backdrop-filter: blur(12px);
+        background: rgba(12, 18, 30, 0.7);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.5rem;
+        padding: 1rem 0;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.8rem;
+        font-family: "Cinzel", "Times New Roman", serif;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        font-size: 0.95rem;
+      }
+
+      .brand-icon {
+        width: 32px;
+        height: 32px;
+        filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.35));
+      }
+
+      .menu {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        align-items: center;
+        font-size: 0.95rem;
+      }
+
+      .menu a {
+        color: var(--bone-200);
+        opacity: 0.9;
+        transition: color 0.2s ease, opacity 0.2s ease;
+      }
+
+      .menu a:hover {
+        color: var(--gold-300);
+        opacity: 1;
+      }
+
+      .nav-cta {
+        padding: 0.55rem 1.2rem;
+        border-radius: 999px;
+        border: 1px solid var(--gold-300);
+        color: var(--gold-300);
+        font-weight: 600;
+      }
+
+      .hero {
+        position: relative;
+        min-height: 88vh;
+        display: grid;
+        align-items: center;
+        padding: 6rem 0 5rem;
+        background-image: var(--bg);
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(120deg, rgba(10, 15, 25, 0.8), rgba(10, 15, 25, 0.5) 45%, rgba(10, 15, 25, 0.9));
+        z-index: 0;
+      }
+
+      .hero::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(circle at 20% 15%, rgba(201, 167, 106, 0.25), transparent 40%);
+        mix-blend-mode: screen;
+        z-index: 0;
+      }
+
+      .hero-inner {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        gap: 1.5rem;
+        max-width: 680px;
+      }
+
+      .eyebrow {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.24em;
+        color: var(--gold-300);
+        margin: 0;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: "Cinzel", "Times New Roman", serif;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        margin: 0 0 0.4rem;
+      }
+
+      h1 {
+        font-size: clamp(2.4rem, 4vw, 3.6rem);
+      }
+
+      h2 {
+        font-size: clamp(1.8rem, 3vw, 2.6rem);
+      }
+
+      h3 {
+        font-size: 1.4rem;
+      }
+
+      .subtitle {
+        font-size: 1.1rem;
+        color: var(--bone-200);
+        margin: 0;
+      }
+
+      .store-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 0.5rem;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.85rem 1.6rem;
+        border-radius: 999px;
+        border: 1px solid var(--stroke);
+        color: var(--cream-100);
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 12px 30px rgba(5, 8, 16, 0.35);
+        transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+      }
+
+      .btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 18px 40px rgba(5, 8, 16, 0.4);
+      }
+
+      .btn.primary {
+        background: linear-gradient(135deg, #d5b079 0%, #b88d4c 100%);
+        color: #1a1309;
+        border: none;
+      }
+
+      .btn.secondary {
+        border-color: rgba(227, 195, 143, 0.6);
+      }
+
+      .btn.ghost {
+        background: transparent;
+        border-color: rgba(255, 255, 255, 0.2);
+        color: var(--bone-200);
+      }
+
+      section {
+        padding: 4.5rem 0;
+      }
+
+      .section-intro {
+        max-width: 680px;
+        color: var(--bone-200);
+        margin: 1rem 0 0;
+      }
+
+      .depth-grid {
+        margin-top: 2.5rem;
+        display: grid;
+        gap: 2rem;
+      }
+
+      .depth-card {
+        position: relative;
+        border-radius: var(--radius-lg);
+        height: clamp(340px, 42vw, 420px);
+        background-image: var(--bg);
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+        display: flex;
+        align-items: flex-end;
+        cursor: pointer;
+      }
+
+      .depth-card::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, rgba(8, 12, 20, 0.12), rgba(8, 12, 20, 0.62));
+      }
+
+      .depth-card .glass {
+        position: relative;
+        z-index: 1;
+        margin: 1.6rem;
+        padding: 1.6rem;
+        border-radius: 18px;
+        background: rgba(18, 28, 45, 0.35);
+        border: 1px solid var(--stroke);
+        backdrop-filter: blur(16px);
+        box-shadow: var(--shadow);
+        max-width: 540px;
+        max-height: 120px;
+        overflow: hidden;
+        transform: translateY(0);
+        transition: max-height 0.35s ease, background 0.35s ease, transform 0.35s ease;
+      }
+
+      .depth-card p {
+        margin: 0;
+        color: var(--bone-200);
+      }
+
+      .depth-card .glass p {
+        opacity: 0;
+        max-height: 0;
+        transform: translateY(8px);
+        transition: opacity 0.3s ease, transform 0.3s ease, max-height 0.3s ease;
+      }
+
+      .depth-card:hover .glass,
+      .depth-card:focus-within .glass,
+      .depth-card:focus .glass {
+        max-height: calc(100% - 3.2rem);
+        background: var(--glass);
+        transform: translateY(-4px);
+      }
+
+      .depth-card:hover .glass p,
+      .depth-card:focus-within .glass p,
+      .depth-card:focus .glass p {
+        opacity: 1;
+        max-height: 500px;
+        transform: translateY(0);
+      }
+
+      .depth-card:focus-visible {
+        outline: 2px solid var(--gold-300);
+        outline-offset: 4px;
+      }
+
+      .ethics-grid {
+        display: grid;
+        gap: 2rem;
+        align-items: center;
+      }
+
+      .ethics-card {
+        background: var(--glass-strong);
+        border: 1px solid var(--stroke);
+        border-radius: var(--radius-lg);
+        padding: 2rem;
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(18px);
+      }
+
+      .ethics-list {
+        list-style: none;
+        padding: 0;
+        margin: 1.2rem 0 0;
+        display: grid;
+        gap: 0.9rem;
+      }
+
+      .ethics-list li {
+        display: flex;
+        gap: 0.75rem;
+        align-items: flex-start;
+      }
+
+      .ethics-list li::before {
+        content: "*";
+        color: var(--gold-300);
+        font-size: 0.9rem;
+        margin-top: 0.1rem;
+      }
+
+      .downloads .cta-card {
+        background: linear-gradient(130deg, rgba(23, 36, 60, 0.86), rgba(14, 22, 36, 0.96)),
+          url("assets/fondos/divine_mercy.jpg") center/cover;
+        border-radius: var(--radius-lg);
+        padding: 2.4rem;
+        display: grid;
+        gap: 1.5rem;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: var(--shadow);
+      }
+
+      .downloads .cta-card p {
+        margin: 0.6rem 0 0;
+        color: var(--bone-200);
+      }
+
+      .site-footer {
+        padding: 2.5rem 0 3.5rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .footer-inner {
+        display: grid;
+        gap: 1.2rem;
+      }
+
+      .footer-links,
+      .lang-switch {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        align-items: center;
+        color: var(--bone-200);
+        font-size: 0.95rem;
+      }
+
+      .lang-switch a[aria-current="page"] {
+        color: var(--gold-300);
+        font-weight: 600;
+      }
+
+      .cookie-banner {
+        position: fixed;
+        bottom: 1.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: min(960px, calc(100% - 2rem));
+        background: rgba(10, 16, 28, 0.92);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: var(--radius-lg);
+        padding: 1.4rem 1.6rem;
+        box-shadow: var(--shadow);
+        z-index: 30;
+      }
+
+      .cookie-content {
+        display: grid;
+        gap: 1rem;
+      }
+
+      .cookie-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+        align-items: center;
+      }
+
+      .toggle {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.95rem;
+      }
+
+      .cookie-more {
+        color: var(--gold-300);
+        font-size: 0.95rem;
+      }
+
+      .parallax {
+        background-attachment: scroll;
+      }
+
+      @media (min-width: 768px) {
+        .hero {
+          padding: 7.5rem 0 6rem;
+        }
+
+        .depth-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .downloads .cta-card {
+          grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+          align-items: center;
+        }
+
+        .footer-inner {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          align-items: center;
+        }
+      }
+
+      @media (min-width: 1100px) {
+        .depth-grid {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+      }
+
+      @media (min-width: 900px) {
+        .parallax {
+          background-attachment: fixed;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .menu {
+          width: 100%;
+          justify-content: flex-start;
+        }
+
+        .nav {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+
+      @media (prefers-reduced-motion: no-preference) {
+        .hero-inner > * {
+          animation: fade-up 0.9s ease forwards;
+          opacity: 0;
+        }
+
+        .hero-inner > *:nth-child(1) {
+          animation-delay: 0.1s;
+        }
+
+        .hero-inner > *:nth-child(2) {
+          animation-delay: 0.2s;
+        }
+
+        .hero-inner > *:nth-child(3) {
+          animation-delay: 0.3s;
+        }
+
+        .hero-inner > *:nth-child(4) {
+          animation-delay: 0.4s;
+        }
+
+        .depth-card {
+          animation: fade-up 0.8s ease forwards;
+          animation-delay: var(--delay);
+          opacity: 0;
+        }
+      }
+
+      @keyframes fade-up {
+        from {
+          opacity: 0;
+          transform: translateY(16px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation: none !important;
+          scroll-behavior: auto !important;
+        }
+      }
+    </style>
   </head>
   <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
     <header class="site-header">
       <div class="container nav">
-        <a class="brand" href="./" aria-label="Inicio">
-          <img src="assets/img/favicon.svg" alt="cruz" class="brand-icon" />
+        <a class="brand" href="./" aria-label="Inspiración Católica, inicio">
+          <img src="assets/img/favicon.svg" alt="Cruz" class="brand-icon" />
           <span>Inspiración Católica</span>
         </a>
-        <nav class="menu">
-          <a href="privacy.html">Privacidad</a>
-          <a href="terms.html">Términos</a>
-          <a href="cookies.html">Cookies</a>
-          <a href="en/" aria-label="English version">EN</a>
+        <nav class="menu" aria-label="Navegación principal">
+          <a href="#profundidad">Profundidad</a>
+          <a href="#privacidad">Privacidad</a>
+          <a href="#descargas" class="nav-cta">Descargar</a>
         </nav>
       </div>
     </header>
 
-    <section class="hero">
-      <div class="hero-overlay"></div>
-      <div class="container hero-inner">
-        <h1>Palabras que elevan el alma</h1>
-        <p class="subtitle">Frases bíblicas y de la tradición católica, con fondos contemplativos para orar y compartir cada día.</p>
-        <div class="store-buttons">
-          <a class="btn primary" href="#descargas" aria-label="Descargar para Android">Android</a>
-          <a class="btn secondary" href="#descargas" aria-label="Descargar para iOS">iOS</a>
-        </div>
-        <small class="note">En inglés se distribuye como “Catholic Inspiration Daily”.</small>
-      </div>
-    </section>
-
-    <main class="container">
-      <section id="oracion" class="devotional">
-        <h2>Oración y contemplación</h2>
-        <p>Inspiración Católica está pensada como un pequeño espacio de silencio: leer una cita, dejar que resuene en el corazón y convertirla en oración. Los fondos contemplativos y la voz natural ayudan a meditar en cualquier momento del día.</p>
-        <ul class="feature-list">
-          <li>Lee una frase con calma y en silencio.</li>
-          <li>Guárdala en favoritos para volver a ella.</li>
-          <li>Activa el recordatorio diario para reservar un minuto de oración.</li>
-        </ul>
-        <blockquote class="verse">“Tu palabra es lámpara para mis pasos” <span class="ref">(cf. Sal 119)</span></blockquote>
-      </section>
-
-      <section id="categorias" class="categories">
-        <h2>Temáticas</h2>
-        <div class="grid">
-          <article class="card" style="--bg:url('assets/fondos/papal_wisdom.jpg');background-image:url('assets/fondos/papal_wisdom.jpg')">
-            <h3>Sabiduría Pontificia</h3>
-          </article>
-          <article class="card" style="--bg:url('assets/fondos/divine_mercy.jpg');background-image:url('assets/fondos/divine_mercy.jpg')">
-            <h3>Divina Misericordia</h3>
-          </article>
-          <article class="card" style="--bg:url('assets/fondos/marian_devotion.jpg');background-image:url('assets/fondos/marian_devotion.jpg')">
-            <h3>Devoción Mariana</h3>
-          </article>
-          <article class="card" style="--bg:url('assets/fondos/saints_inspiration.jpg');background-image:url('assets/fondos/saints_inspiration.jpg')">
-            <h3>Voces de los Santos</h3>
-          </article>
-          <article class="card" style="--bg:url('assets/fondos/scripture_trust.jpg');background-image:url('assets/fondos/scripture_trust.jpg')">
-            <h3>Escrituras de Esperanza</h3>
-          </article>
+    <main id="contenido">
+      <section class="hero parallax" style="--bg:url('assets/fondos/scripture_trust.jpg')">
+        <div class="container hero-inner">
+          <p class="eyebrow">Inspiración Católica</p>
+          <h1>Inspiración Católica: Tu santuario digital diario</h1>
+          <p class="subtitle">Donde la belleza de la Tradición se encuentra con la tecnología. Oración, silencio y la Palabra de Dios en tu bolsillo.</p>
+          <div class="store-buttons">
+            <a class="btn secondary" href="#descargas" aria-label="Descargar en Android">Descargar en Android</a>
+          </div>
         </div>
       </section>
 
-      <section id="caracteristicas" class="features">
-        <h2>Características</h2>
-        <ul class="feature-list">
-          <li>Frases por temáticas con atribución (papa, santo, Escritura).</li>
-          <li>Fondos contemplativos por categoría con superposición suave.</li>
-          <li>Reproducción por voz natural en español e inglés.</li>
-          <li>Favoritos, compartir como imagen y recordatorio diario opcional.</li>
-          <li>Diseño cuidado y sin rastreadores innecesarios.</li>
-        </ul>
+      <section id="profundidad">
+        <div class="container">
+          <p class="eyebrow">La profundidad espiritual</p>
+          <h2>La profundidad espiritual</h2>
+          <p class="section-intro">Cada categoría es un camino de oración. Las temáticas están pensadas para acompañar tu día con belleza, verdad y consuelo, respetando el ritmo del corazón.</p>
+          <div class="depth-grid">
+            <article class="depth-card parallax" style="--bg:url('assets/fondos/papal_wisdom.jpg'); --delay: 0.05s;" tabindex="0">
+              <div class="glass">
+                <h3>Sabiduría Pontificia</h3>
+                <p>La voz de Pedro a través de los siglos. Las encíclicas y reflexiones de los Papas nos ofrecen una brújula moral segura y una conexión viva con la historia de nuestra Iglesia.</p>
+              </div>
+            </article>
+            <article class="depth-card parallax" style="--bg:url('assets/fondos/divine_mercy.jpg'); --delay: 0.1s;" tabindex="0">
+              <div class="glass">
+                <h3>Divina Misericordia</h3>
+                <p>En un mundo herido, el mensaje de Jesús a Santa Faustina es un refugio. &quot;Jesús, en Ti confío&quot; no es solo una frase, es la llave a la paz interior y al perdón incondicional.</p>
+              </div>
+            </article>
+            <article class="depth-card parallax" style="--bg:url('assets/fondos/marian_devotion.jpg'); --delay: 0.15s;" tabindex="0">
+              <div class="glass">
+                <h3>Devoción Mariana</h3>
+                <p>A Jesús por María. La Madre de Dios nos enseña la humildad perfecta y nos protege con su manto. Sus palabras son pocas en la Escritura, pero su presencia lo llena todo.</p>
+              </div>
+            </article>
+            <article class="depth-card parallax" style="--bg:url('assets/fondos/saints_inspiration.jpg'); --delay: 0.2s;" tabindex="0">
+              <div class="glass">
+                <h3>Voces de los Santos</h3>
+                <p>Nuestros hermanos mayores en la fe. Sus vidas nos demuestran que la santidad es posible en cualquier época y estado de vida. No estamos solos en el camino.</p>
+              </div>
+            </article>
+            <article class="depth-card parallax" style="--bg:url('assets/fondos/scripture_trust.jpg'); --delay: 0.25s;" tabindex="0">
+              <div class="glass">
+                <h3>Escrituras de Esperanza</h3>
+                <p>Lámpara es tu palabra para mis pasos. La Biblia no es un libro del pasado, sino Dios hablándote hoy, consolando tu alma e iluminando tus decisiones diarias.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="privacidad">
+        <div class="container ethics-grid">
+          <div>
+            <p class="eyebrow">Privacidad y tecnología ética</p>
+            <h2>Privacidad y Tecnología Ética</h2>
+            <p class="section-intro">Inspiración Católica está construida desde la ética católica: tu intimidad es sagrada. No hay vigilancia ni explotación de datos, solo un espacio sereno para la oración diaria.</p>
+          </div>
+          <div class="ethics-card">
+            <h3>Tu calma, tu privacidad</h3>
+            <p>Todo ocurre en tu dispositivo. Conservamos la paz digital sin compromisos.</p>
+            <ul class="ethics-list">
+              <li>Sin rastreo de datos ni perfiles.</li>
+              <li>Notificaciones, TTS y favoritos funcionan localmente.</li>
+              <li>No vendemos ni compartimos información personal.</li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <section id="descargas" class="downloads">
-        <h2>Descargar la app</h2>
-        <p>Añade aquí los enlaces a las tiendas cuando estén disponibles.</p>
-        <div class="store-buttons">
-          <a class="btn primary ghost" href="#" rel="nofollow noopener" aria-disabled="true">Google Play (próximamente)</a>
-          <a class="btn secondary ghost" href="#" rel="nofollow noopener" aria-disabled="true">App Store (próximamente)</a>
+        <div class="container">
+          <div class="cta-card">
+            <div>
+              <p class="eyebrow">Disponible pronto en Android</p>
+              <h2>Descargar la app</h2>
+              <p>Una experiencia serena para llevar la oración contigo, en cualquier momento del día.</p>
+            </div>
+            <div class="store-buttons">
+              <a class="btn secondary ghost" href="#" rel="nofollow noopener" aria-disabled="true">Descargar en Android</a>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="container">
-        <p>© <span id="year"></span> Inspiración Católica. Todos los derechos reservados.</p>
-        <p class="legal-links">
-          <a href="privacy.html">Política de privacidad</a> ·
-          <a href="terms.html">Términos de uso</a> ·
-          <a href="cookies.html">Preferencias de cookies</a> ·
-          <a href="mailto:demotass.dev@gmail.com">Contacto</a>
-        </p>
+      <div class="container footer-inner">
+        <p>&copy; <span id="year"></span> Inspiración Católica.</p>
+        <div class="footer-links">
+          <a href="privacy.html">Privacidad</a>
+          <a href="terms.html">Términos</a>
+          <a href="cookies.html">Cookies</a>
+        </div>
+        <div class="lang-switch" aria-label="Selector de idioma">
+          <span>Idioma:</span>
+          <a href="./" aria-current="page">ES</a>
+          <span>/</span>
+          <a href="en/">EN</a>
+        </div>
       </div>
     </footer>
 
@@ -129,4 +719,4 @@
 
     <script src="assets/js/main.js"></script>
   </body>
-  </html>
+</html>
