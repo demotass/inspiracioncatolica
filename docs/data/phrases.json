@@ -4,7 +4,7 @@
       "id": "papal_wisdom",
       "titles": {
         "en": "Papal Wisdom",
-        "es": "Sabiduría PapalXXXX"
+        "es": "Sabiduría Papal"
       },
       "color": "#5B7CFF",
       "background": "assets/fondos/papal_wisdom.jpg",
@@ -376,7 +376,7 @@
         {
           "text": {
             "en": "For I know the plans I have for you, says the Lord, plans for your welfare and not for evil, to give you a future and a hope.",
-            "es": "Porque yo sÃ© los planes que tengo para ustedes â€”orÃ¡culo del SeÃ±orâ€” planes de bienestar y no de desgracia, para darles un futuro y una esperanza."
+            "es": "Porque yo sé los planes que tengo para ustedes —oráculo del Señor— planes de bienestar y no de desgracia, para darles un futuro y una esperanza."
           },
           "source": {
             "en": "Jeremiah 29:11",

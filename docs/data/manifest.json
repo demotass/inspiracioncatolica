@@ -1,0 +1,10 @@
+{
+  "version": "1.0.0",
+  "dataUrl": "https://inspiracion.demotass.com/phrases.json",
+  "backgrounds": {
+    "papal_wisdom": {
+      "url": "https://inspiracion.demotass.com/fondos/papal_wisdom.jpg",
+      "version": "1.0.0"
+    }
+  }
+}
