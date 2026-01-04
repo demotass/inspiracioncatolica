@@ -2,8 +2,28 @@
   "version": "1.0.0",
   "dataUrl": "https://inspiracion.demotass.com/phrases.json",
   "backgrounds": {
+    "divine_mercy": {
+      "url": "https://inspiracion.demotass.com/fondos/divine_mercy.jpg",
+      "version": "1.0.0"
+    },
+    "marian_devotion": {
+      "url": "https://inspiracion.demotass.com/fondos/marian_devotion.jpg",
+      "version": "1.0.0"
+    },
     "papal_wisdom": {
       "url": "https://inspiracion.demotass.com/fondos/papal_wisdom.jpg",
+      "version": "1.0.0"
+    },
+    "eucharistic_adoration": {
+      "url": "https://inspiracion.demotass.com/fondos/eucharistic_adoration.jpg",
+      "version": "1.0.0"
+    },
+    "sacred_scripture": {
+      "url": "https://inspiracion.demotass.com/fondos/sacred_scripture.jpg",
+      "version": "1.0.0"
+    },
+    "saints_wisdom": {
+      "url": "https://inspiracion.demotass.com/fondos/saints_wisdom.jpg",
       "version": "1.0.0"
     }
   }
